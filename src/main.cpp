@@ -7,8 +7,12 @@ using namespace expon;
 
 int main ()
 {
-    auto num = 2 ** 3.0_n;
-    assert( num == 8 );
+    auto num1 = 2 ** 3.0_n;
+    assert( num1 == 8 );
+
+    NumberWrapper num2 = 0;
+    if ( !num2 )
+        std::cout << std::endl;//assert( num2 == 0.0 );
 
     return 0;
 }
